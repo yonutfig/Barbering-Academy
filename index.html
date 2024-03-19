@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,700&family=Vollkorn:ital,wght@0,400;0,500;0,800;1,500;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <canvas id="bg"></canvas>
+    <div class="container">
+      <nav>
+        <a href="#mission">Mission statement</a>
+        <a href="#academies">Portofolio</a>
+        <a href="#faq">FAQ</a>
+        <a href="./register.html">Join Us</a>
+        <span></span>
+      </nav>
+    </div>
+    <div class="mission hidden" id="mission">
+      <div class="logo">
+        <p>At Next Level Cut Academy</p>
+        <p>we're forging a revolution in Romanian barbering.</p>
+        <p>Our mission is to empower visionary barbers who redefine</p>
+        <p>grooming through precision, boundless creativity,and community.</p>
+        <p>Join us in shaping a vibrant future of personal care.</p>
+      </div>
+    </div>
+
+    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+      <img class="image" src="./images/pic7.jpg" draggable="false" />
+      <img class="image" src="./images/pic5.jpg" draggable="false" />
+      <img class="image" src="./images/pic4.jpg" draggable="false" />
+      <img class="image" src="./images/pic2.jpg" draggable="false" />
+      <img class="image" src="./images/pic3.jpg" draggable="false" />
+      <img class="image" src="./images/pic6.jpg" draggable="false" />
+      <img class="image" src="./images/pic1.jpg" draggable="false" />
+      <img class="image" src="./images/NextLevelCut-A4.png" draggable="false" />
+    </div>
+
+    <div class="video__content">
+      <video
+        src="./media/Step by Step __ FUNDAMENTAL HAIRCUT TUTORIALS.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+    </div>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <h1 id="faq">FAQ`s</h1>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            data-mdb-collapse-init
+            class="accordion-button"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#panelsStayOpen-collapseOne"
+            aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne"
+            style="background-color: transparent; border: none"
+          >
+            I have never cut hair, can I take this course?
+          </button>
+        </h2>
+        <div
+          id="panelsStayOpen-collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+        >
+          <div class="accordion-body">
+            You must currently be cutting hair as a barber or hairdresser in a
+            busy shop environment in order to enrol. Individuals with zero
+            experience should take our masters course for beginners. As this
+            course is for experienced persons, evidence of your experience or
+            qualifications will be requested upon booking. This can be a letter
+            from your salon stating where you work and how long for, a CV, or
+            prior hairdressing or barbering qualifications.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            data-mdb-collapse-init
+            class="accordion-button collapsed"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#panelsStayOpen-collapseTwo"
+            aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseTwo"
+            style="background-color: transparent; border: none"
+          >
+            What are the license requirements to legally work in Bucharest as a
+            barber? Do my hours from the U.S. transfer?
+          </button>
+        </h2>
+        <div
+          id="panelsStayOpen-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+        >
+          <div class="accordion-body">
+            Each state has its own process to recognise hours earned overseas.
+            We’ve had a strong track record of Americans training with us and
+            receiving reciprocity for their hours. The process typically entails
+            the learner completing a form for their state board after training
+            with NLC, and NLC provides a letter of reference confirming their
+            hours and modules covered.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            data-mdb-collapse-init
+            class="accordion-button collapsed"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#panelsStayOpen-collapseThree"
+            aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseThree"
+            style="background-color: transparent; border: none; color: white"
+          >
+            Do you have any accommodation recommendations?
+          </button>
+        </h2>
+        <div
+          id="panelsStayOpen-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+        >
+          <div class="accordion-body">
+            Please send an email to info@NextlevelcutAcademy.com and request a
+            list of recommended accommodation.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/SplitText.min.js"></script>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./3dText.js"></script>
+    <script type="module" src="./splitText.js"></script>
+    <script type="module" src="./carousel.js"></script>
+    <script type="module" src="./image-scroll.js"></script>
+  </body>
+</html>
